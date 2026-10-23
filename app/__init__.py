@@ -6,6 +6,7 @@ from flask import Flask
 from pymongo import MongoClient
 
 
+
 def create_app():
     project_folder = Path(__file__).resolve().parent.parent
     load_dotenv(project_folder / ".env")
@@ -25,10 +26,21 @@ def create_app():
     ]
 
     from app.routes.providers import providers_bp
+    from app.routes.service_categories import service_categories_bp
 
     app.register_blueprint(
         providers_bp,
         url_prefix="/api/v1.0/providers",
     )
+    app.register_blueprint(
+        service_categories_bp,
+        url_prefix="/api/v1.0/services",
+    )
 
+    from app.routes.customer import customers_bp        
+    app.register_blueprint(
+        customers_bp,
+        url_prefix="/api/v1.0/customers",
+    )
+    
     return app

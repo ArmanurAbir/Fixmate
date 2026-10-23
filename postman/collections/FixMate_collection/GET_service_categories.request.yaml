@@ -1,0 +1,37 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5050/api/v1.0/service-categories/CAT001
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Returns 10 service categories\", function () {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.count).to.eql(10);\r
+
+      \    pm.expect(body.data).to.have.lengthOf(10);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Categories include task types\", function () {\r
+
+      \    const categories = pm.response.json().data;\r
+
+      \    pm.expect(categories[0]).to.have.property(\"_id\");\r
+
+      \    pm.expect(categories[0].taskTypes).to.be.an(\"array\");\r
+
+      });"
+    language: text/javascript
+order: 4000

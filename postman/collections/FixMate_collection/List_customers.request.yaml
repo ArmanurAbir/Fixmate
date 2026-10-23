@@ -1,0 +1,43 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5050/api/v1.0/customers
+method: GET
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Customer count matches returned data\", function () {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.data).to.be.an(\"array\");\r
+
+      \    pm.expect(body.count).to.eql(body.data.length);\r
+
+      \    pm.expect(body.data.length).to.be.at.most(20);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Returned customers are active\", function () {\r
+
+      \    const body = pm.response.json();\r
+
+      \    body.data.forEach(function (customer) {\r
+
+      \        pm.expect(customer.isActive).to.eql(true);\r
+
+      \        pm.expect(customer).to.have.property(\"_id\");\r
+
+      \    });\r
+
+      });"
+    language: text/javascript
+order: 7000

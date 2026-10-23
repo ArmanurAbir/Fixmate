@@ -1,0 +1,32 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5050/api/v1.0/customers
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"displayName\": \"Postman Test Customer\",\r
+
+    \  \"email\": \"postman.customer.20261023@example.com\"\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status is 404\", function () {\r
+
+      \    pm.response.to.have.status(404);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Error says customer not found\", function () {\r
+
+      \    const body = pm.response.json();\r
+
+      \    pm.expect(body.error).to.eql(\"Customer not found\");\r
+
+      });"
+    language: text/javascript
+order: 9000
