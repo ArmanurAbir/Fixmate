@@ -1,0 +1,9 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5050/api/v1.0/customers/CUSTE9D400BF42CB
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: MF_XiqS2YsmyjMsA2zwyXVrCzvyGEXFtadhCpZBJCUs
+order: 15000

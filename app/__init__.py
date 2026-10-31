@@ -6,7 +6,6 @@ from flask import Flask
 from pymongo import MongoClient
 
 
-
 def create_app():
     project_folder = Path(__file__).resolve().parent.parent
     load_dotenv(project_folder / ".env")
@@ -21,12 +20,13 @@ def create_app():
     client.admin.command("ping")
 
     app.extensions["mongo_client"] = client
-    app.extensions["mongo_db"] = client[
-        os.environ["MONGO_DB_NAME"]
-    ]
+    app.extensions["mongo_db"] = client[os.environ["MONGO_DB_NAME"]]
 
     from app.routes.providers import providers_bp
     from app.routes.service_categories import service_categories_bp
+    from app.routes.customer import customers_bp
+    from app.routes.auth import auth_bp
+    from app.routes.service_request import service_requests_bp
 
     app.register_blueprint(
         providers_bp,
@@ -36,11 +36,17 @@ def create_app():
         service_categories_bp,
         url_prefix="/api/v1.0/services",
     )
-
-    from app.routes.customer import customers_bp        
     app.register_blueprint(
         customers_bp,
         url_prefix="/api/v1.0/customers",
     )
-    
+    app.register_blueprint(
+        auth_bp,
+        url_prefix="/api/v1.0/auth",
+    )
+    app.register_blueprint(
+        service_requests_bp,
+        url_prefix="/api/v1.0/requests",
+    )
+
     return app

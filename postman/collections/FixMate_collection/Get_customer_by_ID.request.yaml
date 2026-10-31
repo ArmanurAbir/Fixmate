@@ -1,0 +1,44 @@
+$kind: http-request
+description: ""
+url: http://127.0.0.1:5050/api/v1.0/customers/CUST002
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"displayName\": \"Demo Customer 002 Updated\"\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: "pm.test(\"Status is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Returns the requested customer\", function () {\r
+
+      \    const customer = pm.response.json().data;\r
+
+      \r
+
+      \    pm.expect(customer._id).to.eql(\"CUST002\");\r
+
+      \    pm.expect(customer.isActive).to.eql(true);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Customer properties are included\", function () {\r
+
+      \    const customer = pm.response.json().data;\r
+
+      \    pm.expect(customer.properties).to.be.an(\"array\");\r
+
+      });"
+    language: text/javascript
+order: 11000

@@ -1,0 +1,17 @@
+$kind: http-request
+name: Auth_check_get_http://127.0.0.1:5050/api/v1.0/customers
+description: ""
+url: http://127.0.0.1:5050/api/v1.0/auth/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"email\": \"login.test.20261026b@example.com\",\r
+
+    \  \"password\": \"FixMateTest123\"\r
+
+    }"
+auth:
+  type: bearer
+order: 13000

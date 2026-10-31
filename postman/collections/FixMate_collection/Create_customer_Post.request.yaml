@@ -1,31 +1,41 @@
 $kind: http-request
 description: ""
-url: http://127.0.0.1:5050/api/v1.0/customers
-method: POST
+url: http://127.0.0.1:5050/api/v1.0/customers/CUST002
+method: GET
 body:
   type: json
   content: "{\r
 
     \  \"displayName\": \"Postman Test Customer\",\r
 
-    \  \"email\": \"postman.customer.20261023@example.com\"\r
+    \  \"email\": \"postman.customer.20261023b@example.com\"\r
 
     }"
 scripts:
   - type: afterResponse
-    code: "pm.test(\"Status is 404\", function () {\r
+    code: "pm.test(\"Customer was created\", function () {\r
 
-      \    pm.response.to.have.status(404);\r
+      \    pm.response.to.have.status(201);\r
 
       });\r
 
       \r
 
-      pm.test(\"Error says customer not found\", function () {\r
+      pm.test(\"Response contains the customer details\", function () {\r
 
-      \    const body = pm.response.json();\r
+      \    const customer = pm.response.json().data;\r
 
-      \    pm.expect(body.error).to.eql(\"Customer not found\");\r
+      \r
+
+      \    pm.expect(customer._id).to.be.a(\"string\");\r
+
+      \    pm.expect(customer.displayName).to.eql(\"Postman Test Customer\");\r
+
+      \    pm.expect(customer.email).to.be.a(\"string\");\r
+
+      \    pm.expect(customer.properties).to.be.an(\"array\");\r
+
+      \    pm.expect(customer.savedProviderIds).to.be.an(\"array\");\r
 
       });"
     language: text/javascript
