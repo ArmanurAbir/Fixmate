@@ -224,3 +224,25 @@ def update_service_request(request_id):
         }), 503
 
     return jsonify({"data": updated_request}), 200
+
+@service_requests_bp.delete("/<request_id>")
+@basic_auth_required
+def delete_service_request(request_id):
+    database = current_app.extensions["mongo_db"]
+    customer_id = g.current_customer["_id"]
+
+    try:
+        result = database.serviceRequests.delete_one({
+            "_id": request_id,
+            "customerId": customer_id,
+        })
+    except PyMongoError:
+        current_app.logger.exception("Service request deletion failed")
+        return jsonify({
+            "error": "Database temporarily unavailable"
+        }), 503
+
+    if result.deleted_count == 0:
+        return jsonify({"error": "Service request not found"}), 404
+
+    return jsonify({"message": "Service request deleted"}), 200

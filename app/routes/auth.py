@@ -152,3 +152,50 @@ def login():
         "message": "Login successful. Use these credentials with Basic Auth.",
         "data": customer,
     }), 200
+def provider_basic_auth_required(view_function):
+    @wraps(view_function)
+    def decorated(*args, **kwargs):
+        credentials = request.authorization
+
+        if (
+            credentials is None
+            or credentials.type.lower() != "basic"
+            or not credentials.username
+            or not credentials.password
+        ):
+            return jsonify({
+                "error": "Basic authentication is required"
+            }), 401
+
+        database = current_app.extensions["mongo_db"]
+        email = credentials.username.strip().lower()
+
+        try:
+            provider = database.providers.find_one({
+                "email": email,
+                "isActive": True,
+            })
+        except PyMongoError:
+            current_app.logger.exception("Provider authentication failed")
+            return jsonify({
+                "error": "Database temporarily unavailable"
+            }), 503
+
+        if (
+            provider is None
+            or not provider.get("passwordHash")
+            or not check_password_hash(
+                provider["passwordHash"],
+                credentials.password,
+            )
+        ):
+            return jsonify({
+                "error": "Invalid provider credentials"
+            }), 401
+
+        provider.pop("passwordHash", None)
+        g.current_provider = provider
+
+        return view_function(*args, **kwargs)
+
+    return decorated

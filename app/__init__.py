@@ -27,6 +27,9 @@ def create_app():
     from app.routes.customer import customers_bp
     from app.routes.auth import auth_bp
     from app.routes.service_request import service_requests_bp
+    from app.routes.quotations import quotations_bp
+    from app.routes.avalability import availability_bp
+
 
     app.register_blueprint(
         providers_bp,
@@ -48,5 +51,12 @@ def create_app():
         service_requests_bp,
         url_prefix="/api/v1.0/requests",
     )
-
+    app.register_blueprint(
+    quotations_bp,
+    url_prefix="/api/v1.0/requests",
+    )
+    app.register_blueprint(
+        availability_bp,
+        url_prefix="/api/v1.0/providers",
+    )
     return app
