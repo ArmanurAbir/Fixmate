@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/providers/PROV001/availability
+method: GET
+order: 1000

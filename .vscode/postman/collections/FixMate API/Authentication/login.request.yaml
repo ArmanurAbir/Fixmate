@@ -1,0 +1,96 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/auth/login
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"email\": \"test@example.com\",\r
+
+    \  \"password\": \"Password123\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+scripts:
+  - type: afterResponse
+    code: "\r
+
+      \      pm.test(\"Status code is 200\", function () {\r
+
+      \        pm.response.to.have.status(200);\r
+
+      \      });\r
+
+      \r
+
+      \      pm.test(\"Response has message field\", function () {\r
+
+      \        const json = pm.response.json();\r
+
+      \        pm.expect(json).to.have.property(\"message\");\r
+
+      \        pm.expect(json.message).to.be.a(\"string\").and.not.empty;\r
+
+      \      });\r
+
+      \r
+
+      \      pm.test(\"Response contains data object\", function () {\r
+
+      \        const json = pm.response.json();\r
+
+      \        pm.expect(json).to.have.property(\"data\");\r
+
+      \        pm.expect(json.data).to.be.an(\"object\");\r
+
+      \      });\r
+
+      \r
+
+      \      pm.test(\"Data contains expected user fields\", function () {\r
+
+      \        const data = pm.response.json().data;\r
+
+      \        pm.expect(data).to.have.property(\"_id\");\r
+
+      \        pm.expect(data).to.have.property(\"email\");\r
+
+      \        pm.expect(data).to.have.property(\"displayName\");\r
+
+      \        pm.expect(data).to.have.property(\"isActive\");\r
+
+      \      });\r
+
+      \r
+
+      \      pm.test(\"Email matches login credentials\", function () {\r
+
+      \        const data = pm.response.json().data;\r
+
+      \        pm.expect(data.email).to.eql(\"test@example.com\");\r
+
+      \      });\r
+
+      \r
+
+      \      pm.test(\"isActive is true\", function () {\r
+
+      \        const data = pm.response.json().data;\r
+
+      \        pm.expect(data.isActive).to.be.true;\r
+
+      \      });\r
+
+      \r
+
+      \      pm.test(\"Response time is under 2000ms\", function () {\r
+
+      \        pm.expect(pm.response.responseTime).to.be.below(2000);\r
+
+      \      });"
+    language: text/javascript
+order: 2000

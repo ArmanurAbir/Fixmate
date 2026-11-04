@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/services/CAT001
+method: GET
+order: 2000

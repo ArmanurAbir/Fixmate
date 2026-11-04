@@ -29,7 +29,9 @@ def create_app():
     from app.routes.service_request import service_requests_bp
     from app.routes.quotations import quotations_bp
     from app.routes.avalability import availability_bp
-
+    from app.routes.bookings import bookings_bp
+    from app.routes.reviews import reviews_bp
+    from app.routes.reports import reports_bp
 
     app.register_blueprint(
         providers_bp,
@@ -58,5 +60,17 @@ def create_app():
     app.register_blueprint(
         availability_bp,
         url_prefix="/api/v1.0/providers",
+    )
+    app.register_blueprint(
+        bookings_bp,
+        url_prefix="/api/v1.0/bookings",
+    )
+    app.register_blueprint(
+    reviews_bp,
+    url_prefix="/api/v1.0"
+    )
+    app.register_blueprint(
+        reports_bp,
+        url_prefix="/api/v1.0/reports"
     )
     return app

@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/bookings/BKGA7EF985E17AB/reviews
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"rating\": 5,\r
+
+    \  \"comment\": \"Excellent service! The provider arrived on time and fixed the leaking kitchen tap professionally.\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+order: 1000

@@ -1,0 +1,222 @@
+[
+  {
+    "_id": "CAT001",
+    "name": "Plumbing",
+    "description": "Synthetic domestic plumbing service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0101",
+        "name": "Tap replacement",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0102",
+        "name": "Leak diagnosis",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0103",
+        "name": "Drain clearance",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT002",
+    "name": "Electrical",
+    "description": "Synthetic domestic electrical service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0201",
+        "name": "Socket replacement",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0202",
+        "name": "Lighting repair",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0203",
+        "name": "Circuit diagnosis",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT003",
+    "name": "Cleaning",
+    "description": "Synthetic domestic cleaning service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0301",
+        "name": "Deep cleaning",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0302",
+        "name": "Window cleaning",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0303",
+        "name": "End of tenancy cleaning",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT004",
+    "name": "Gardening",
+    "description": "Synthetic domestic gardening service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0401",
+        "name": "Lawn maintenance",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0402",
+        "name": "Hedge trimming",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0403",
+        "name": "Garden clearance",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT005",
+    "name": "Painting",
+    "description": "Synthetic domestic painting service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0501",
+        "name": "Wall painting",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0502",
+        "name": "Ceiling painting",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0503",
+        "name": "Surface preparation",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT006",
+    "name": "Furniture assembly",
+    "description": "Synthetic domestic furniture assembly service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0601",
+        "name": "Wardrobe assembly",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0602",
+        "name": "Desk assembly",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0603",
+        "name": "Bed assembly",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT007",
+    "name": "Appliance repair",
+    "description": "Synthetic domestic appliance repair service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0701",
+        "name": "Dishwasher diagnosis",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0702",
+        "name": "Washing machine repair",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0703",
+        "name": "Oven diagnosis",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT008",
+    "name": "Computer repair",
+    "description": "Synthetic domestic computer repair service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0801",
+        "name": "Laptop diagnosis",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0802",
+        "name": "Computer setup",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0803",
+        "name": "Network troubleshooting",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT009",
+    "name": "Moving help",
+    "description": "Synthetic domestic moving help service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT0901",
+        "name": "Furniture moving",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT0902",
+        "name": "Packing assistance",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT0903",
+        "name": "Small house move",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  },
+  {
+    "_id": "CAT010",
+    "name": "General repair",
+    "description": "Synthetic domestic general repair service category",
+    "taskTypes": [
+      {
+        "taskTypeId": "TT1001",
+        "name": "Door adjustment",
+        "typicalDurationMinutes": 60
+      },
+      {
+        "taskTypeId": "TT1002",
+        "name": "Shelf installation",
+        "typicalDurationMinutes": 90
+      },
+      {
+        "taskTypeId": "TT1003",
+        "name": "Handle replacement",
+        "typicalDurationMinutes": 120
+      }
+    ]
+  }
+]

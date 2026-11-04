@@ -1,0 +1,32 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/customers
+method: GET
+scripts:
+  - type: afterResponse
+    code: "\r
+
+      pm.test(\"Status code is 200\", function () {\r
+
+      \    pm.response.to.have.status(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Response is valid JSON\", function () {\r
+
+      \    pm.response.to.be.json;\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Response contains customer data\", function () {\r
+
+      \    const json = pm.response.json();\r
+
+      \    pm.expect(json).to.be.an(\"object\");\r
+
+      });\r\n"
+    language: text/javascript
+order: 2000

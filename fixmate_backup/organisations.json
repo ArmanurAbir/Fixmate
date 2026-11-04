@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "ORG001",
+    "name": "FixMate Demo Service Group 1",
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.141982,
+          51.539836
+        ]
+      }
+    },
+    "contact": {
+      "email": "group1@example.com",
+      "preferredChannel": "email"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "_id": "ORG002",
+    "name": "FixMate Demo Service Group 2",
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.104441,
+          51.536335
+        ]
+      }
+    },
+    "contact": {
+      "email": "group2@example.com",
+      "preferredChannel": "email"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "_id": "ORG003",
+    "name": "FixMate Demo Service Group 3",
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.053633,
+          51.5448
+        ]
+      }
+    },
+    "contact": {
+      "email": "group3@example.com",
+      "preferredChannel": "email"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "_id": "ORG004",
+    "name": "FixMate Demo Service Group 4",
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.00387,
+          51.482158
+        ]
+      }
+    },
+    "contact": {
+      "email": "group4@example.com",
+      "preferredChannel": "email"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "_id": "ORG005",
+    "name": "FixMate Demo Service Group 5",
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.115386,
+          51.463522
+        ]
+      }
+    },
+    "contact": {
+      "email": "group5@example.com",
+      "preferredChannel": "email"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T10:00:00Z"
+    }
+  },
+  {
+    "_id": "ORG006",
+    "name": "FixMate Demo Service Group 6",
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.14358,
+          51.540676
+        ]
+      }
+    },
+    "contact": {
+      "email": "group6@example.com",
+      "preferredChannel": "email"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T10:00:00Z"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+workspace:
+  id: 8ff97645-ff68-4f2a-bcd7-d1414a8a5253
+localResources:
+  collections:
+    - ../postman/collections/
+  environments:
+    - ../postman/environments/
+cloudResources:
+  collections:
+    ../postman/collections/FixMate API: 54104111-dba8c555-1ac8-4f26-8a8c-20e800bb2dde

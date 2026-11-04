@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/providers/PROV35249615EBB4/availability
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"weekday\": 6,\r
+
+    \  \"intervals\": [\r
+
+    \    {\r
+
+    \      \"start\": \"09:00\",\r
+
+    \      \"end\": \"13:00\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"start\": \"14:00\",\r
+
+    \      \"end\": \"17:00\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: provider1@example.com
+    password: Password123
+order: 3000

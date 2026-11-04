@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/requests/REQ0471/quotations
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"serviceId\": \"SVC-TEST-001\",\r
+
+    \  \"callOutFeePence\": 1500,\r
+
+    \  \"lineItems\": [\r
+
+    \    {\r
+
+    \      \"taskId\": \"TASK-TEST-001\",\r
+
+    \      \"description\": \"Replace the leaking kitchen tap\",\r
+
+    \      \"quantity\": 1,\r
+
+    \      \"unitLabourPricePence\": 4500,\r
+
+    \      \"materials\": []\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: provider1@example.com
+    password: Password123
+order: 2000

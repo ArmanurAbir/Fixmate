@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/requests/REQ0471/quotations/Q4FBE0BA01D97
+method: PATCH
+body:
+  type: json
+  content: "{\r\n  \"callOutFeePence\": 2000\r\n}"
+auth:
+  type: basic
+  credentials:
+    username: provider1@example.com
+    password: Password123
+order: 4000

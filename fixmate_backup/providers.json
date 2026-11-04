@@ -1,0 +1,7049 @@
+[
+  {
+    "_id": "PROV001",
+    "organisationId": "ORG001",
+    "businessName": "FixMate Demo Provider 001",
+    "email": "provider001@example.com",
+    "isActive": true,
+    "isVerified": false,
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.140777,
+          51.538471
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC001-01",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC001-01-T1",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC001-01-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC001-01-T2",
+            "taskTypeId": "TT0102",
+            "name": "Leak diagnosis",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC001-01-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC001-01-T3",
+            "taskTypeId": "TT0103",
+            "name": "Drain clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC001-01-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC001-02",
+        "categoryId": "CAT002",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC001-02-T1",
+            "taskTypeId": "TT0201",
+            "name": "Socket replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC001-02-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC001-02-T2",
+            "taskTypeId": "TT0202",
+            "name": "Lighting repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC001-02-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC001-02-T3",
+            "taskTypeId": "TT0203",
+            "name": "Circuit diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC001-02-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV001-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV001-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV001-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV001-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV001-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX001",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.5
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV002",
+    "organisationId": "ORG001",
+    "businessName": "FixMate Demo Provider 002",
+    "email": "provider002@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.106491,
+          51.53455
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC002-02",
+        "categoryId": "CAT002",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC002-02-T1",
+            "taskTypeId": "TT0201",
+            "name": "Socket replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC002-02-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC002-02-T2",
+            "taskTypeId": "TT0202",
+            "name": "Lighting repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC002-02-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC002-02-T3",
+            "taskTypeId": "TT0203",
+            "name": "Circuit diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC002-02-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC002-03",
+        "categoryId": "CAT003",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC002-03-T1",
+            "taskTypeId": "TT0301",
+            "name": "Deep cleaning",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC002-03-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC002-03-T2",
+            "taskTypeId": "TT0302",
+            "name": "Window cleaning",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC002-03-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC002-03-T3",
+            "taskTypeId": "TT0303",
+            "name": "End of tenancy cleaning",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC002-03-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV002-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV002-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV002-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV002-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV002-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX002",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV003",
+    "organisationId": "ORG001",
+    "businessName": "FixMate Demo Provider 003",
+    "email": "provider003@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.051878,
+          51.541946
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC003-03",
+        "categoryId": "CAT003",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC003-03-T1",
+            "taskTypeId": "TT0301",
+            "name": "Deep cleaning",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC003-03-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC003-03-T2",
+            "taskTypeId": "TT0302",
+            "name": "Window cleaning",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC003-03-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC003-03-T3",
+            "taskTypeId": "TT0303",
+            "name": "End of tenancy cleaning",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC003-03-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC003-04",
+        "categoryId": "CAT004",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC003-04-T1",
+            "taskTypeId": "TT0401",
+            "name": "Lawn maintenance",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC003-04-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC003-04-T2",
+            "taskTypeId": "TT0402",
+            "name": "Hedge trimming",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC003-04-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC003-04-T3",
+            "taskTypeId": "TT0403",
+            "name": "Garden clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC003-04-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV003-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV003-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV003-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV003-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV003-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX003",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV004",
+    "organisationId": "ORG001",
+    "businessName": "FixMate Demo Provider 004",
+    "email": "provider004@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.008074,
+          51.481643
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC004-04",
+        "categoryId": "CAT004",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC004-04-T1",
+            "taskTypeId": "TT0401",
+            "name": "Lawn maintenance",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC004-04-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC004-04-T2",
+            "taskTypeId": "TT0402",
+            "name": "Hedge trimming",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC004-04-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC004-04-T3",
+            "taskTypeId": "TT0403",
+            "name": "Garden clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC004-04-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC004-05",
+        "categoryId": "CAT005",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC004-05-T1",
+            "taskTypeId": "TT0501",
+            "name": "Wall painting",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC004-05-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC004-05-T2",
+            "taskTypeId": "TT0502",
+            "name": "Ceiling painting",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC004-05-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC004-05-T3",
+            "taskTypeId": "TT0503",
+            "name": "Surface preparation",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC004-05-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV004-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV004-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV004-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV004-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV004-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX004",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV005",
+    "organisationId": "ORG002",
+    "businessName": "FixMate Demo Provider 005",
+    "email": "provider005@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.111726,
+          51.456775
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC005-05",
+        "categoryId": "CAT005",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC005-05-T1",
+            "taskTypeId": "TT0501",
+            "name": "Wall painting",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC005-05-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC005-05-T2",
+            "taskTypeId": "TT0502",
+            "name": "Ceiling painting",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC005-05-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC005-05-T3",
+            "taskTypeId": "TT0503",
+            "name": "Surface preparation",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC005-05-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC005-06",
+        "categoryId": "CAT006",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC005-06-T1",
+            "taskTypeId": "TT0601",
+            "name": "Wardrobe assembly",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC005-06-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC005-06-T2",
+            "taskTypeId": "TT0602",
+            "name": "Desk assembly",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC005-06-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC005-06-T3",
+            "taskTypeId": "TT0603",
+            "name": "Bed assembly",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC005-06-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV005-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV005-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV005-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV005-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV005-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX005",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV006",
+    "organisationId": "ORG002",
+    "businessName": "FixMate Demo Provider 006",
+    "email": "provider006@example.com",
+    "isActive": true,
+    "isVerified": false,
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.139636,
+          51.536356
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC006-06",
+        "categoryId": "CAT006",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC006-06-T1",
+            "taskTypeId": "TT0601",
+            "name": "Wardrobe assembly",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC006-06-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC006-06-T2",
+            "taskTypeId": "TT0602",
+            "name": "Desk assembly",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC006-06-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC006-06-T3",
+            "taskTypeId": "TT0603",
+            "name": "Bed assembly",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC006-06-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC006-07",
+        "categoryId": "CAT007",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC006-07-T1",
+            "taskTypeId": "TT0701",
+            "name": "Dishwasher diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC006-07-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC006-07-T2",
+            "taskTypeId": "TT0702",
+            "name": "Washing machine repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC006-07-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC006-07-T3",
+            "taskTypeId": "TT0703",
+            "name": "Oven diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC006-07-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV006-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV006-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV006-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV006-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV006-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX006",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV007",
+    "organisationId": "ORG002",
+    "businessName": "FixMate Demo Provider 007",
+    "email": "provider007@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.101845,
+          51.541595
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC007-07",
+        "categoryId": "CAT007",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC007-07-T1",
+            "taskTypeId": "TT0701",
+            "name": "Dishwasher diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC007-07-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC007-07-T2",
+            "taskTypeId": "TT0702",
+            "name": "Washing machine repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC007-07-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC007-07-T3",
+            "taskTypeId": "TT0703",
+            "name": "Oven diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC007-07-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC007-08",
+        "categoryId": "CAT008",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC007-08-T1",
+            "taskTypeId": "TT0801",
+            "name": "Laptop diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC007-08-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC007-08-T2",
+            "taskTypeId": "TT0802",
+            "name": "Computer setup",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC007-08-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC007-08-T3",
+            "taskTypeId": "TT0803",
+            "name": "Network troubleshooting",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC007-08-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV007-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV007-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV007-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV007-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV007-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX007",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV008",
+    "organisationId": "ORG002",
+    "businessName": "FixMate Demo Provider 008",
+    "email": "provider008@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.05298,
+          51.543762
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC008-08",
+        "categoryId": "CAT008",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC008-08-T1",
+            "taskTypeId": "TT0801",
+            "name": "Laptop diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC008-08-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC008-08-T2",
+            "taskTypeId": "TT0802",
+            "name": "Computer setup",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC008-08-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC008-08-T3",
+            "taskTypeId": "TT0803",
+            "name": "Network troubleshooting",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC008-08-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC008-09",
+        "categoryId": "CAT009",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC008-09-T1",
+            "taskTypeId": "TT0901",
+            "name": "Furniture moving",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC008-09-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC008-09-T2",
+            "taskTypeId": "TT0902",
+            "name": "Packing assistance",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC008-09-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC008-09-T3",
+            "taskTypeId": "TT0903",
+            "name": "Small house move",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC008-09-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV008-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV008-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV008-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV008-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV008-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX008",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV009",
+    "organisationId": "ORG003",
+    "businessName": "FixMate Demo Provider 009",
+    "email": "provider009@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.004051,
+          51.483109
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC009-09",
+        "categoryId": "CAT009",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC009-09-T1",
+            "taskTypeId": "TT0901",
+            "name": "Furniture moving",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC009-09-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC009-09-T2",
+            "taskTypeId": "TT0902",
+            "name": "Packing assistance",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC009-09-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC009-09-T3",
+            "taskTypeId": "TT0903",
+            "name": "Small house move",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC009-09-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC009-10",
+        "categoryId": "CAT010",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC009-10-T1",
+            "taskTypeId": "TT1001",
+            "name": "Door adjustment",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC009-10-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC009-10-T2",
+            "taskTypeId": "TT1002",
+            "name": "Shelf installation",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC009-10-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC009-10-T3",
+            "taskTypeId": "TT1003",
+            "name": "Handle replacement",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC009-10-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV009-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV009-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV009-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV009-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV009-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX009",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV010",
+    "organisationId": "ORG003",
+    "businessName": "FixMate Demo Provider 010",
+    "email": "provider010@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.11315,
+          51.459546
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC010-10",
+        "categoryId": "CAT010",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC010-10-T1",
+            "taskTypeId": "TT1001",
+            "name": "Door adjustment",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC010-10-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC010-10-T2",
+            "taskTypeId": "TT1002",
+            "name": "Shelf installation",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC010-10-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC010-10-T3",
+            "taskTypeId": "TT1003",
+            "name": "Handle replacement",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC010-10-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC010-01",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC010-01-T1",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC010-01-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC010-01-T2",
+            "taskTypeId": "TT0102",
+            "name": "Leak diagnosis",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC010-01-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC010-01-T3",
+            "taskTypeId": "TT0103",
+            "name": "Drain clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC010-01-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV010-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV010-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV010-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV010-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV010-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX010",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV011",
+    "organisationId": "ORG003",
+    "businessName": "FixMate Demo Provider 011",
+    "email": "provider011@example.com",
+    "isActive": true,
+    "isVerified": false,
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.145002,
+          51.542884
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC011-01",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC011-01-T1",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC011-01-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC011-01-T2",
+            "taskTypeId": "TT0102",
+            "name": "Leak diagnosis",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC011-01-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC011-01-T3",
+            "taskTypeId": "TT0103",
+            "name": "Drain clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC011-01-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC011-02",
+        "categoryId": "CAT002",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC011-02-T1",
+            "taskTypeId": "TT0201",
+            "name": "Socket replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC011-02-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC011-02-T2",
+            "taskTypeId": "TT0202",
+            "name": "Lighting repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC011-02-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC011-02-T3",
+            "taskTypeId": "TT0203",
+            "name": "Circuit diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC011-02-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV011-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV011-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV011-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV011-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV011-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX011",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV012",
+    "organisationId": "ORG003",
+    "businessName": "FixMate Demo Provider 012",
+    "email": "provider012@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.101582,
+          51.541049
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC012-02",
+        "categoryId": "CAT002",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC012-02-T1",
+            "taskTypeId": "TT0201",
+            "name": "Socket replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC012-02-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC012-02-T2",
+            "taskTypeId": "TT0202",
+            "name": "Lighting repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC012-02-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC012-02-T3",
+            "taskTypeId": "TT0203",
+            "name": "Circuit diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC012-02-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC012-03",
+        "categoryId": "CAT003",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC012-03-T1",
+            "taskTypeId": "TT0301",
+            "name": "Deep cleaning",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC012-03-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC012-03-T2",
+            "taskTypeId": "TT0302",
+            "name": "Window cleaning",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC012-03-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC012-03-T3",
+            "taskTypeId": "TT0303",
+            "name": "End of tenancy cleaning",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC012-03-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV012-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV012-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV012-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV012-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV012-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX012",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV013",
+    "organisationId": "ORG004",
+    "businessName": "FixMate Demo Provider 013",
+    "email": "provider013@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.056869,
+          51.541271
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC013-03",
+        "categoryId": "CAT003",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC013-03-T1",
+            "taskTypeId": "TT0301",
+            "name": "Deep cleaning",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC013-03-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC013-03-T2",
+            "taskTypeId": "TT0302",
+            "name": "Window cleaning",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC013-03-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC013-03-T3",
+            "taskTypeId": "TT0303",
+            "name": "End of tenancy cleaning",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC013-03-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC013-04",
+        "categoryId": "CAT004",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC013-04-T1",
+            "taskTypeId": "TT0401",
+            "name": "Lawn maintenance",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC013-04-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC013-04-T2",
+            "taskTypeId": "TT0402",
+            "name": "Hedge trimming",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC013-04-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC013-04-T3",
+            "taskTypeId": "TT0403",
+            "name": "Garden clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC013-04-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV013-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV013-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV013-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV013-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV013-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX013",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV014",
+    "organisationId": "ORG004",
+    "businessName": "FixMate Demo Provider 014",
+    "email": "provider014@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.008127,
+          51.484257
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC014-04",
+        "categoryId": "CAT004",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC014-04-T1",
+            "taskTypeId": "TT0401",
+            "name": "Lawn maintenance",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC014-04-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC014-04-T2",
+            "taskTypeId": "TT0402",
+            "name": "Hedge trimming",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC014-04-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC014-04-T3",
+            "taskTypeId": "TT0403",
+            "name": "Garden clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC014-04-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC014-05",
+        "categoryId": "CAT005",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC014-05-T1",
+            "taskTypeId": "TT0501",
+            "name": "Wall painting",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC014-05-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC014-05-T2",
+            "taskTypeId": "TT0502",
+            "name": "Ceiling painting",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC014-05-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC014-05-T3",
+            "taskTypeId": "TT0503",
+            "name": "Surface preparation",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC014-05-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV014-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV014-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV014-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV014-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV014-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX014",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV015",
+    "organisationId": "ORG004",
+    "businessName": "FixMate Demo Provider 015",
+    "email": "provider015@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.113202,
+          51.457206
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC015-05",
+        "categoryId": "CAT005",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC015-05-T1",
+            "taskTypeId": "TT0501",
+            "name": "Wall painting",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC015-05-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC015-05-T2",
+            "taskTypeId": "TT0502",
+            "name": "Ceiling painting",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC015-05-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC015-05-T3",
+            "taskTypeId": "TT0503",
+            "name": "Surface preparation",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC015-05-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC015-06",
+        "categoryId": "CAT006",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC015-06-T1",
+            "taskTypeId": "TT0601",
+            "name": "Wardrobe assembly",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC015-06-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC015-06-T2",
+            "taskTypeId": "TT0602",
+            "name": "Desk assembly",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC015-06-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC015-06-T3",
+            "taskTypeId": "TT0603",
+            "name": "Bed assembly",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC015-06-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV015-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV015-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV015-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV015-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV015-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX015",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV016",
+    "organisationId": "ORG004",
+    "businessName": "FixMate Demo Provider 016",
+    "email": "provider016@example.com",
+    "isActive": true,
+    "isVerified": false,
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.145928,
+          51.538695
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC016-06",
+        "categoryId": "CAT006",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC016-06-T1",
+            "taskTypeId": "TT0601",
+            "name": "Wardrobe assembly",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC016-06-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC016-06-T2",
+            "taskTypeId": "TT0602",
+            "name": "Desk assembly",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC016-06-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC016-06-T3",
+            "taskTypeId": "TT0603",
+            "name": "Bed assembly",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC016-06-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC016-07",
+        "categoryId": "CAT007",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC016-07-T1",
+            "taskTypeId": "TT0701",
+            "name": "Dishwasher diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC016-07-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC016-07-T2",
+            "taskTypeId": "TT0702",
+            "name": "Washing machine repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC016-07-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC016-07-T3",
+            "taskTypeId": "TT0703",
+            "name": "Oven diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC016-07-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV016-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV016-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV016-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV016-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV016-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX016",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV017",
+    "organisationId": "ORG005",
+    "businessName": "FixMate Demo Provider 017",
+    "email": "provider017@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.10216,
+          51.535304
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC017-07",
+        "categoryId": "CAT007",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC017-07-T1",
+            "taskTypeId": "TT0701",
+            "name": "Dishwasher diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC017-07-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC017-07-T2",
+            "taskTypeId": "TT0702",
+            "name": "Washing machine repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC017-07-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC017-07-T3",
+            "taskTypeId": "TT0703",
+            "name": "Oven diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC017-07-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC017-08",
+        "categoryId": "CAT008",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC017-08-T1",
+            "taskTypeId": "TT0801",
+            "name": "Laptop diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC017-08-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC017-08-T2",
+            "taskTypeId": "TT0802",
+            "name": "Computer setup",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC017-08-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC017-08-T3",
+            "taskTypeId": "TT0803",
+            "name": "Network troubleshooting",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC017-08-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV017-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV017-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV017-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV017-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV017-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX017",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV018",
+    "organisationId": "ORG005",
+    "businessName": "FixMate Demo Provider 018",
+    "email": "provider018@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.052812,
+          51.546494
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC018-08",
+        "categoryId": "CAT008",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC018-08-T1",
+            "taskTypeId": "TT0801",
+            "name": "Laptop diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC018-08-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC018-08-T2",
+            "taskTypeId": "TT0802",
+            "name": "Computer setup",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC018-08-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC018-08-T3",
+            "taskTypeId": "TT0803",
+            "name": "Network troubleshooting",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC018-08-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC018-09",
+        "categoryId": "CAT009",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC018-09-T1",
+            "taskTypeId": "TT0901",
+            "name": "Furniture moving",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC018-09-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC018-09-T2",
+            "taskTypeId": "TT0902",
+            "name": "Packing assistance",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC018-09-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC018-09-T3",
+            "taskTypeId": "TT0903",
+            "name": "Small house move",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC018-09-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV018-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV018-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV018-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV018-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV018-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX018",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV019",
+    "organisationId": "ORG005",
+    "businessName": "FixMate Demo Provider 019",
+    "email": "provider019@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.00161,
+          51.481533
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC019-09",
+        "categoryId": "CAT009",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC019-09-T1",
+            "taskTypeId": "TT0901",
+            "name": "Furniture moving",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC019-09-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC019-09-T2",
+            "taskTypeId": "TT0902",
+            "name": "Packing assistance",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC019-09-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC019-09-T3",
+            "taskTypeId": "TT0903",
+            "name": "Small house move",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC019-09-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC019-10",
+        "categoryId": "CAT010",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC019-10-T1",
+            "taskTypeId": "TT1001",
+            "name": "Door adjustment",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC019-10-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC019-10-T2",
+            "taskTypeId": "TT1002",
+            "name": "Shelf installation",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC019-10-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC019-10-T3",
+            "taskTypeId": "TT1003",
+            "name": "Handle replacement",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC019-10-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV019-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV019-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV019-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV019-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV019-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX019",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV020",
+    "organisationId": "ORG005",
+    "businessName": "FixMate Demo Provider 020",
+    "email": "provider020@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.115573,
+          51.457123
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC020-10",
+        "categoryId": "CAT010",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC020-10-T1",
+            "taskTypeId": "TT1001",
+            "name": "Door adjustment",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC020-10-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC020-10-T2",
+            "taskTypeId": "TT1002",
+            "name": "Shelf installation",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC020-10-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC020-10-T3",
+            "taskTypeId": "TT1003",
+            "name": "Handle replacement",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC020-10-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC020-01",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC020-01-T1",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC020-01-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC020-01-T2",
+            "taskTypeId": "TT0102",
+            "name": "Leak diagnosis",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC020-01-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC020-01-T3",
+            "taskTypeId": "TT0103",
+            "name": "Drain clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC020-01-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV020-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV020-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV020-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV020-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV020-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX020",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV021",
+    "organisationId": "ORG006",
+    "businessName": "FixMate Demo Provider 021",
+    "email": "provider021@example.com",
+    "isActive": true,
+    "isVerified": false,
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.14418,
+          51.543653
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC021-01",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC021-01-T1",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC021-01-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC021-01-T2",
+            "taskTypeId": "TT0102",
+            "name": "Leak diagnosis",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC021-01-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC021-01-T3",
+            "taskTypeId": "TT0103",
+            "name": "Drain clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC021-01-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC021-02",
+        "categoryId": "CAT002",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC021-02-T1",
+            "taskTypeId": "TT0201",
+            "name": "Socket replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC021-02-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC021-02-T2",
+            "taskTypeId": "TT0202",
+            "name": "Lighting repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC021-02-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC021-02-T3",
+            "taskTypeId": "TT0203",
+            "name": "Circuit diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC021-02-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV021-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV021-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV021-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV021-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV021-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX021",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.5
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV022",
+    "organisationId": "ORG006",
+    "businessName": "FixMate Demo Provider 022",
+    "email": "provider022@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.106571,
+          51.536957
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC022-02",
+        "categoryId": "CAT002",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC022-02-T1",
+            "taskTypeId": "TT0201",
+            "name": "Socket replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC022-02-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC022-02-T2",
+            "taskTypeId": "TT0202",
+            "name": "Lighting repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC022-02-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC022-02-T3",
+            "taskTypeId": "TT0203",
+            "name": "Circuit diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC022-02-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC022-03",
+        "categoryId": "CAT003",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC022-03-T1",
+            "taskTypeId": "TT0301",
+            "name": "Deep cleaning",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC022-03-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC022-03-T2",
+            "taskTypeId": "TT0302",
+            "name": "Window cleaning",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC022-03-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC022-03-T3",
+            "taskTypeId": "TT0303",
+            "name": "End of tenancy cleaning",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC022-03-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV022-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV022-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV022-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV022-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV022-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX022",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV023",
+    "organisationId": "ORG006",
+    "businessName": "FixMate Demo Provider 023",
+    "email": "provider023@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.05723,
+          51.544445
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC023-03",
+        "categoryId": "CAT003",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC023-03-T1",
+            "taskTypeId": "TT0301",
+            "name": "Deep cleaning",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC023-03-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC023-03-T2",
+            "taskTypeId": "TT0302",
+            "name": "Window cleaning",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC023-03-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC023-03-T3",
+            "taskTypeId": "TT0303",
+            "name": "End of tenancy cleaning",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC023-03-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC023-04",
+        "categoryId": "CAT004",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC023-04-T1",
+            "taskTypeId": "TT0401",
+            "name": "Lawn maintenance",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC023-04-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC023-04-T2",
+            "taskTypeId": "TT0402",
+            "name": "Hedge trimming",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC023-04-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC023-04-T3",
+            "taskTypeId": "TT0403",
+            "name": "Garden clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC023-04-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV023-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV023-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV023-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV023-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV023-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX023",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV024",
+    "organisationId": "ORG006",
+    "businessName": "FixMate Demo Provider 024",
+    "email": "provider024@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.004966,
+          51.485332
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC024-04",
+        "categoryId": "CAT004",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC024-04-T1",
+            "taskTypeId": "TT0401",
+            "name": "Lawn maintenance",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC024-04-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC024-04-T2",
+            "taskTypeId": "TT0402",
+            "name": "Hedge trimming",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC024-04-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC024-04-T3",
+            "taskTypeId": "TT0403",
+            "name": "Garden clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC024-04-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC024-05",
+        "categoryId": "CAT005",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC024-05-T1",
+            "taskTypeId": "TT0501",
+            "name": "Wall painting",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC024-05-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC024-05-T2",
+            "taskTypeId": "TT0502",
+            "name": "Ceiling painting",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC024-05-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC024-05-T3",
+            "taskTypeId": "TT0503",
+            "name": "Surface preparation",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC024-05-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV024-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV024-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV024-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV024-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV024-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX024",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV025",
+    "organisationId": null,
+    "businessName": "FixMate Demo Provider 025",
+    "email": "provider025@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.117273,
+          51.458053
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC025-05",
+        "categoryId": "CAT005",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC025-05-T1",
+            "taskTypeId": "TT0501",
+            "name": "Wall painting",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC025-05-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC025-05-T2",
+            "taskTypeId": "TT0502",
+            "name": "Ceiling painting",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC025-05-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC025-05-T3",
+            "taskTypeId": "TT0503",
+            "name": "Surface preparation",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC025-05-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC025-06",
+        "categoryId": "CAT006",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC025-06-T1",
+            "taskTypeId": "TT0601",
+            "name": "Wardrobe assembly",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC025-06-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC025-06-T2",
+            "taskTypeId": "TT0602",
+            "name": "Desk assembly",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC025-06-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC025-06-T3",
+            "taskTypeId": "TT0603",
+            "name": "Bed assembly",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC025-06-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV025-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV025-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV025-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV025-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV025-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX025",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV026",
+    "organisationId": null,
+    "businessName": "FixMate Demo Provider 026",
+    "email": "provider026@example.com",
+    "isActive": true,
+    "isVerified": false,
+    "location": {
+      "area": "Camden",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.14425,
+          51.542332
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC026-06",
+        "categoryId": "CAT006",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC026-06-T1",
+            "taskTypeId": "TT0601",
+            "name": "Wardrobe assembly",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC026-06-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC026-06-T2",
+            "taskTypeId": "TT0602",
+            "name": "Desk assembly",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC026-06-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC026-06-T3",
+            "taskTypeId": "TT0603",
+            "name": "Bed assembly",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC026-06-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC026-07",
+        "categoryId": "CAT007",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC026-07-T1",
+            "taskTypeId": "TT0701",
+            "name": "Dishwasher diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC026-07-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC026-07-T2",
+            "taskTypeId": "TT0702",
+            "name": "Washing machine repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC026-07-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC026-07-T3",
+            "taskTypeId": "TT0703",
+            "name": "Oven diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC026-07-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV026-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV026-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV026-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV026-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV026-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX026",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV027",
+    "organisationId": null,
+    "businessName": "FixMate Demo Provider 027",
+    "email": "provider027@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Islington",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.103424,
+          51.53491
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC027-07",
+        "categoryId": "CAT007",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC027-07-T1",
+            "taskTypeId": "TT0701",
+            "name": "Dishwasher diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC027-07-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC027-07-T2",
+            "taskTypeId": "TT0702",
+            "name": "Washing machine repair",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC027-07-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC027-07-T3",
+            "taskTypeId": "TT0703",
+            "name": "Oven diagnosis",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 8700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC027-07-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC027-08",
+        "categoryId": "CAT008",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC027-08-T1",
+            "taskTypeId": "TT0801",
+            "name": "Laptop diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC027-08-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC027-08-T2",
+            "taskTypeId": "TT0802",
+            "name": "Computer setup",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC027-08-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC027-08-T3",
+            "taskTypeId": "TT0803",
+            "name": "Network troubleshooting",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC027-08-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV027-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV027-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV027-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV027-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV027-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX027",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV028",
+    "organisationId": null,
+    "businessName": "FixMate Demo Provider 028",
+    "email": "provider028@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Hackney",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.055977,
+          51.544139
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC028-08",
+        "categoryId": "CAT008",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC028-08-T1",
+            "taskTypeId": "TT0801",
+            "name": "Laptop diagnosis",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC028-08-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC028-08-T2",
+            "taskTypeId": "TT0802",
+            "name": "Computer setup",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 7800,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC028-08-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC028-08-T3",
+            "taskTypeId": "TT0803",
+            "name": "Network troubleshooting",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9000,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC028-08-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC028-09",
+        "categoryId": "CAT009",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC028-09-T1",
+            "taskTypeId": "TT0901",
+            "name": "Furniture moving",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC028-09-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC028-09-T2",
+            "taskTypeId": "TT0902",
+            "name": "Packing assistance",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC028-09-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC028-09-T3",
+            "taskTypeId": "TT0903",
+            "name": "Small house move",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC028-09-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV028-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV028-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV028-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV028-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV028-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX028",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 3.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV029",
+    "organisationId": null,
+    "businessName": "FixMate Demo Provider 029",
+    "email": "provider029@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Greenwich",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          0.005361,
+          51.481518
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC029-09",
+        "categoryId": "CAT009",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC029-09-T1",
+            "taskTypeId": "TT0901",
+            "name": "Furniture moving",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC029-09-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC029-09-T2",
+            "taskTypeId": "TT0902",
+            "name": "Packing assistance",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8100,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC029-09-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC029-09-T3",
+            "taskTypeId": "TT0903",
+            "name": "Small house move",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9300,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC029-09-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC029-10",
+        "categoryId": "CAT010",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC029-10-T1",
+            "taskTypeId": "TT1001",
+            "name": "Door adjustment",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC029-10-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC029-10-T2",
+            "taskTypeId": "TT1002",
+            "name": "Shelf installation",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC029-10-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC029-10-T3",
+            "taskTypeId": "TT1003",
+            "name": "Handle replacement",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC029-10-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV029-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV029-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV029-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV029-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV029-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX029",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 4.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROV030",
+    "organisationId": null,
+    "businessName": "FixMate Demo Provider 030",
+    "email": "provider030@example.com",
+    "isActive": true,
+    "isVerified": true,
+    "location": {
+      "area": "Brixton",
+      "city": "London",
+      "country": "GB",
+      "timezone": "Europe/London",
+      "point": {
+        "type": "Point",
+        "coordinates": [
+          -0.118575,
+          51.462984
+        ]
+      }
+    },
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC030-10",
+        "categoryId": "CAT010",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC030-10-T1",
+            "taskTypeId": "TT1001",
+            "name": "Door adjustment",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 7200,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC030-10-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC030-10-T2",
+            "taskTypeId": "TT1002",
+            "name": "Shelf installation",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 8400,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC030-10-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC030-10-T3",
+            "taskTypeId": "TT1003",
+            "name": "Handle replacement",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 9600,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC030-10-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "serviceId": "SVC030-01",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "callOutFeePence": 1500,
+          "currency": "GBP"
+        },
+        "tasks": [
+          {
+            "taskId": "SVC030-01-T1",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC030-01-T1-M1",
+                "name": "Task consumables",
+                "quantity": 1,
+                "unit": "pack",
+                "unitPricePence": 500
+              }
+            ]
+          },
+          {
+            "taskId": "SVC030-01-T2",
+            "taskTypeId": "TT0102",
+            "name": "Leak diagnosis",
+            "estimatedDurationMinutes": 90,
+            "labourPricePence": 5700,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC030-01-T2-M1",
+                "name": "Task consumables",
+                "quantity": 2,
+                "unit": "pack",
+                "unitPricePence": 750
+              }
+            ]
+          },
+          {
+            "taskId": "SVC030-01-T3",
+            "taskTypeId": "TT0103",
+            "name": "Drain clearance",
+            "estimatedDurationMinutes": 120,
+            "labourPricePence": 6900,
+            "requiredMaterials": [
+              {
+                "materialId": "SVC030-01-T3-M1",
+                "name": "Task consumables",
+                "quantity": 3,
+                "unit": "pack",
+                "unitPricePence": 1000
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": [
+        {
+          "availabilityId": "AV030-1",
+          "weekday": 1,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV030-2",
+          "weekday": 2,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV030-3",
+          "weekday": 3,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV030-4",
+          "weekday": 4,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        },
+        {
+          "availabilityId": "AV030-5",
+          "weekday": 5,
+          "intervals": [
+            {
+              "start": "08:00",
+              "end": "12:00"
+            },
+            {
+              "start": "13:00",
+              "end": "18:00"
+            }
+          ]
+        }
+      ],
+      "exceptions": [
+        {
+          "exceptionId": "EX030",
+          "date": "2026-12-25",
+          "isAvailable": false,
+          "reason": "Holiday"
+        }
+      ]
+    },
+    "ratingSummary": {
+      "count": 8,
+      "average": 5.0
+    },
+    "createdAt": {
+      "$date": "2025-02-01T09:00:00Z"
+    }
+  },
+  {
+    "_id": "PROVE19387A49EDF",
+    "organisationId": "ORG001",
+    "businessName": "Postman Test Provider Updated",
+    "email": "provider@example.com",
+    "passwordHash": "scrypt:32768:8:1$rrS0fx4FIjQOkRax$80ef0e8150d1f30cacf4dcf55fdd1012f644606ce5afa0f2d1a6463ea74c1a0444603e747097e362277da0e0e175d1f0206d2a46495e1fe1619433662ffb7357",
+    "isActive": false,
+    "isVerified": false,
+    "location": {},
+    "serviceRadiusKm": 25,
+    "services": [],
+    "ratingSummary": {
+      "average": 0,
+      "count": 0
+    },
+    "createdAt": {
+      "$date": "2026-11-02T11:30:08.824Z"
+    },
+    "updatedAt": {
+      "$date": "2026-11-02T12:16:34.126Z"
+    }
+  },
+  {
+    "_id": "PROV35249615EBB4",
+    "organisationId": "ORG001",
+    "businessName": "Postman Test Provider",
+    "email": "provider1@example.com",
+    "passwordHash": "scrypt:32768:8:1$1G9NblUPrar8YyLz$8717979105e8753bd6b0e2a60312afcd5cd7e3327020a2d79ac8870833d2ab8203396d420897bbdeb836acfd7e9ff63b1c5fbf91e34e022aaa0833ea12f99864",
+    "isActive": true,
+    "isVerified": false,
+    "location": {},
+    "serviceRadiusKm": 25,
+    "services": [
+      {
+        "serviceId": "SVC-TEST-001",
+        "categoryId": "CAT001",
+        "pricing": {
+          "model": "fixed-task",
+          "currency": "GBP",
+          "callOutFeePence": 1500
+        },
+        "tasks": [
+          {
+            "taskId": "TASK-TEST-001",
+            "taskTypeId": "TT0101",
+            "name": "Tap replacement",
+            "estimatedDurationMinutes": 60,
+            "labourPricePence": 4500,
+            "requiredMaterials": []
+          }
+        ]
+      }
+    ],
+    "ratingSummary": {
+      "average": 0,
+      "count": 0
+    },
+    "createdAt": {
+      "$date": "2026-11-02T12:19:12.370Z"
+    },
+    "availability": {
+      "timezone": "Europe/London",
+      "weeklySlots": []
+    },
+    "updatedAt": {
+      "$date": "2026-11-02T15:12:57.223Z"
+    }
+  },
+  {
+    "_id": "PROV1D09AC65DEE8",
+    "organisationId": "ORG001",
+    "businessName": "Postman Test Provider",
+    "email": "provider99@example.com",
+    "passwordHash": "scrypt:32768:8:1$bWbxFi8vHfaEmdLE$f33a67ebf88414c938fd7b622479c5dbda0c574a7252145dd74a215fd8ce6db1218eff001f2c5670aa431b225c392d177f71d0ff09e7e2474489de0238e72bb0",
+    "isActive": true,
+    "isVerified": false,
+    "location": {},
+    "serviceRadiusKm": 25,
+    "services": [],
+    "ratingSummary": {
+      "average": 0,
+      "count": 0
+    },
+    "createdAt": {
+      "$date": "2026-11-04T14:13:56.274Z"
+    }
+  }
+]

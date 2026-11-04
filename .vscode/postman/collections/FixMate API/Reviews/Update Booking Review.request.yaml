@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/bookings/BKGA7EF985E17AB/reviews/REV7B2B0F07504C
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"rating\": 4,\r
+
+    \  \"comment\": \"Good service. The provider fixed the kitchen tap and completed the work professionally.\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+order: 3000

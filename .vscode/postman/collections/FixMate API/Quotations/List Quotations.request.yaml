@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/requests/REQ6C8ACEA87006/quotations
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+order: 1000

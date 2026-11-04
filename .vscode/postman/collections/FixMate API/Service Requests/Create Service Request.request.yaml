@@ -1,0 +1,36 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/requests
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"categoryId\": \"CAT001\",\r
+
+    \  \"assetId\": \"PROP001-1-R1-A1\",\r
+
+    \  \"description\": \"Tap is leaking in the kitchen\",\r
+
+    \  \"budgetPence\": 9500,\r
+
+    \  \"details\": {\r
+
+    \    \"access\": {\r
+
+    \      \"parkingAvailable\": true,\r
+
+    \      \"stairsOnly\": false\r
+
+    \    }\r
+
+    \  },\r
+
+    \  \"attachments\": []\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+order: 2000

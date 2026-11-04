@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/providers/PROV3C085E91B1DE
+method: DELETE
+auth:
+  type: basic
+  credentials:
+    username: provider999@example.com
+    password: Password123
+order: 5000

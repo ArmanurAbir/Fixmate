@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/providers/PROV35249615EBB4/availability/AV79BBEDEE0A0A
+method: GET
+order: 7000

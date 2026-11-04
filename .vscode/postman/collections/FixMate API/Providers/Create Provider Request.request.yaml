@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/providers
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"businessName\": \"Postman Test Provider 2\",\r
+
+    \  \"organisationId\": \"ORG001\",\r
+
+    \  \"email\": \"provider999@example.com\",\r
+
+    \  \"password\": \"Password123\"\r
+
+    }"
+scripts:
+  - type: afterResponse
+    code: ""
+    language: text/javascript
+order: 3000

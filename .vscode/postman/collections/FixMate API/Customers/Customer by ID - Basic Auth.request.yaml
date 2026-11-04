@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/customers/CUSTC6F9454355C0
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: postman.customer999@example.com
+    password: Password123
+order: 4000

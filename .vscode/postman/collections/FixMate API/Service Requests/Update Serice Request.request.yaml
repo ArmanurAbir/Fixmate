@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/requests/REQ81A078933EBA
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"description\": \"Updated: tap is leaking under the kitchen sink\",\r
+
+    \  \"budgetPence\": 12000\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+order: 4000

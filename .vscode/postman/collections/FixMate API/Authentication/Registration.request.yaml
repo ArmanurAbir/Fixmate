@@ -1,0 +1,15 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"displayName\": \"Test Customer\",\r
+
+    \  \"email\": \"test2@example.com\",\r
+
+    \  \"password\": \"Password123\"\r
+
+    }"
+order: 1000

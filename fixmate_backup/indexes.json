@@ -1,0 +1,97 @@
+{
+  "serviceCategories": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ],
+  "serviceRequests": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ],
+  "customers": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ],
+  "bookings": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    },
+    {
+      "v": 2,
+      "key": {
+        "requestId": 1
+      },
+      "name": "requestId_unique",
+      "unique": true,
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ],
+  "authSessions": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ],
+  "organisations": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ],
+  "providers": [
+    {
+      "v": 2,
+      "key": {
+        "_id": 1
+      },
+      "name": "_id_",
+      "collation": {
+        "locale": "simple"
+      }
+    }
+  ]
+}

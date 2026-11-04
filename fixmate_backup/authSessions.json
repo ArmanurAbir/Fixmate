@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "3acca05cb95cdca1df19815e44ea964a3c0fd94caf7995c342e108899f3ab2b5",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:30:32.660Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:30:32.660Z"
+    }
+  },
+  {
+    "_id": "d61f6b05857090ac27d5927edea62e5e50abf6c7a6ea2dbac980a92967cb47fb",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:36:34.718Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:36:34.718Z"
+    }
+  },
+  {
+    "_id": "599db10ee7984dbea106ebd22a52650470a67501376953414179aa8ddf578b68",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:39:03.658Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:39:03.658Z"
+    }
+  },
+  {
+    "_id": "1d1f3ab3670f267fc890fef7c24994dfda4fe09d130d13977434838e608eafa1",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:40:00.758Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:40:00.758Z"
+    }
+  },
+  {
+    "_id": "fcdfd88a7993455d956c36a66f93becb7310c66f65bb4173135c27a917539970",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:47:18.095Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:47:18.095Z"
+    }
+  },
+  {
+    "_id": "e68adae9633875dbbf41aacac01def077070cb87ef15b5768068fea6226a297d",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:53:39.175Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:53:39.175Z"
+    }
+  },
+  {
+    "_id": "da78e0208095fd0815271d257cc5610fe3b8fcb83529999b1a9f1c24d2c432ac",
+    "customerId": "CUSTE9D400BF42CB",
+    "createdAt": {
+      "$date": "2026-10-26T11:56:06.681Z"
+    },
+    "expiresAt": {
+      "$date": "2026-10-26T23:56:06.681Z"
+    }
+  }
+]

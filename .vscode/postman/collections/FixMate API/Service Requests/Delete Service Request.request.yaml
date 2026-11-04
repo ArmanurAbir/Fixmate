@@ -1,0 +1,16 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/requests/REQ81A078933EBA
+method: DELETE
+body:
+  type: json
+  content: "{\r
+
+    \  \"message\": \"Service request deleted\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: test@example.com
+    password: Password123
+order: 5000

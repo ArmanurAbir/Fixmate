@@ -1,0 +1,34 @@
+$kind: http-request
+url: http://127.0.0.1:5050/api/v1.0/providers/PROV35249615EBB4/availability/AV79BBEDEE0A0A
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"intervals\": [\r
+
+    \    {\r
+
+    \      \"start\": \"09:00\",\r
+
+    \      \"end\": \"12:00\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"start\": \"13:00\",\r
+
+    \      \"end\": \"18:00\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: provider1@example.com
+    password: Password123
+order: 5000
