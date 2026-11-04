@@ -12,5 +12,5 @@ auth:
   type: basic
   credentials:
     username: postman.customer99@example.com
-    password: Password123
+    password: "{{auth_password_04jq}}"
 order: 5000

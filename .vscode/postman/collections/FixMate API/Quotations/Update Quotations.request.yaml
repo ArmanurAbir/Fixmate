@@ -8,5 +8,5 @@ auth:
   type: basic
   credentials:
     username: provider1@example.com
-    password: Password123
+    password: "{{auth_password_04jq}}"
 order: 4000

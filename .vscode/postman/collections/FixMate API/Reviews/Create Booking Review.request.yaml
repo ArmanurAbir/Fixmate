@@ -7,12 +7,13 @@ body:
 
     \  \"rating\": 5,\r
 
-    \  \"comment\": \"Excellent service! The provider arrived on time and fixed the leaking kitchen tap professionally.\"\r
+    \  \"comment\": \"Excellent service! The provider arrived on time and fixed
+    the leaking kitchen tap professionally.\"\r
 
     }"
 auth:
   type: basic
   credentials:
     username: test@example.com
-    password: Password123
+    password: "{{auth_password_04jq}}"
 order: 1000

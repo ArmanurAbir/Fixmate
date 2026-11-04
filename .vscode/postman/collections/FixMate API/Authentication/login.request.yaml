@@ -7,14 +7,14 @@ body:
 
     \  \"email\": \"test@example.com\",\r
 
-    \  \"password\": \"Password123\"\r
+    \  \"password\": \"{{auth_password_04jq}}\"\r
 
     }"
 auth:
   type: basic
   credentials:
     username: test@example.com
-    password: Password123
+    password: "{{auth_password_04jq}}"
 scripts:
   - type: afterResponse
     code: "\r

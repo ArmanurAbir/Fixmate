@@ -1,1 +1,52 @@
 $kind: collection
+description: |-
+  ## FixMate API
+
+  The **FixMate API** is a RESTful backend service designed to power a home maintenance and repair platform that connects **customers** with **service providers**.
+
+  This collection covers the full lifecycle of the FixMate platform across **10 functional modules**:
+
+  ### 🔐 Authentication
+  Handles user login and registration using Basic Auth, returning user profile data and session details.
+
+  ### 👤 Customers
+  Manage customer profiles — create, retrieve, update, and delete customer accounts.
+
+  ### 🔧 Providers
+  Manage service provider profiles, including listing, creating, updating, and removing providers.
+
+  ### 📋 Service Requests
+  Customers can raise, view, update, and delete maintenance or repair requests, including details such as asset ID, category, budget, and access information.
+
+  ### 📅 Availability
+  Providers can manage their availability slots — add, update, retrieve, and delete time windows for accepting jobs.
+
+  ### 💬 Quotations
+  Providers can submit and manage quotations against service requests. Customers can accept or reject them.
+
+  ### 📆 Bookings
+  Track and manage confirmed bookings between customers and providers, including status updates and booking details.
+
+  ### ⭐ Reviews
+  Customers can leave, update, and delete reviews on completed bookings. Provider-level review listings are also supported.
+
+  ### 📊 Reports
+  Administrative reporting endpoints covering provider performance, monthly reviews, service demand trends, and cancellation summaries.
+
+  ### 🛠️ Services
+  Browse the catalogue of available service categories offered on the platform.
+
+  ---
+
+  **Base URL:** `http://127.0.0.1:5050/api/v1.0`
+  **Authentication:** Basic Auth (email + password)
+  **Response format:** JSON
+variables:
+  - key: auth_password_04jq
+    secret: true
+    source:
+      provider: postman
+      postman:
+        type: cloud
+        secretId: dadcdd3b-9115-45ee-acdf-90db000cf9a3
+        vaultId: e9a99ae5-1a0e-4438-9ce0-e9fa149a4c94

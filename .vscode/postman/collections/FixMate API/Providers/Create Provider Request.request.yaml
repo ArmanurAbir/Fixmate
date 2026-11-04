@@ -11,7 +11,7 @@ body:
 
     \  \"email\": \"provider999@example.com\",\r
 
-    \  \"password\": \"Password123\"\r
+    \  \"password\": \"{{auth_password_04jq}}\"\r
 
     }"
 scripts:
